@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yellow Background on Input Focus</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    
+    form {
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    /* Style for the input field when focused */
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+        background-color: yellow;
+        outline: none; /* Remove the default focus outline, which varies between browsers */
+    }
+</style>
+</head>
+<body>
+    <h1>Form with Yellow Background on Input Focus</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+    </form>
+</body>
+</html>
