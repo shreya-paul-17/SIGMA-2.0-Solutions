@@ -109,6 +109,24 @@
             margin-left: 50px;
         }
         
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: space-evenly;
+        }
+
+        .cards{
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            width:400px;
+            height: 300px;
+        }
+
+        .cards>img{
+            width: 200px;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
@@ -146,5 +164,22 @@
                 <p>Experience Swiggy's superfast delivery <br> for food delivered fresh & on time</p>
             </div>
         </div>
+    <div class="cards-container">
+        <div class="cards">
+            <img src="img-1.avif"  alt="order-online" srcset="">
+            <h2>Order Online</h2>
+            <p>Stay Home and order to your Door Step</p>
+        </div>
+        <div class="cards">
+            <img src="img-2.avif" alt="on-site-dining" srcset="">
+            <h2>On-site Dining</h2>
+            <p>View the city's favourite dining venues.</p>
+        </div>
+        <div class="cards">
+            <img src="img-3.avif" alt="nightlife-and-clubs" srcset="">
+            <h2>Nightlife & Clubs</h2>
+            <p>Explore the city's top nightlife outlets & Book tables.</p>
+        </div>
+    </div>
 </body>
 </html>
