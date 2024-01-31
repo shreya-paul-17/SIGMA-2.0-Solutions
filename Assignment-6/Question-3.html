@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+        }
+        .information{
+          text-align: left;
+          padding-top: 30%; 
+          padding-left: 30px;
+          padding-right: 50px; 
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .information>p{
+            padding-top: 10px;
+        }
+        button{
+            background-color: black;
+            color: white;
+            width: 150px;
+            height: 30px;
+            margin-top: 30px;
+        }
+        nav{
+            display: grid;
+            grid-template-columns:repeat(5,1fr);
+        }
+        nav>a{
+            text-decoration: none;
+            color: #000000;
+            padding-top: 30px;
+            display: grid;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .home{
+            margin-left:90px;
+        }
+        .about{
+            margin-left: 50px;
+            margin-right:35px;
+        }
+        .contact{
+            padding-right:140px;
+        }
+        nav>button{
+            width: 150px;
+            height: 40px;
+            background-color: #4add4a;
+            border-color:#4add4a;
+            color: #000000;
+            font-weight: bolder;
+            margin-left: 50%;
+            margin-top: 5%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .picture{
+            background-color: #ffff00;
+            height: 98%;
+        }
+        .picture>img{
+           width: 65%;
+           height: 100%;
+        }
+        .Swiggy-features{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", "sans-serif";
+            background-color: #2b1e16;
+        }
+        .Swiggy-features>.subsection-1{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color:#2f1503;
+        
+        }
+        /* .subsections{
+            background-color:#2f1503;
+            width: 33%;
+            height: 550px;
+        } */
+        .subsection-1>h2{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: normal;
+            margin-left: 22px;
+        }
+        .subsections-1>p{
+            color: rgb(154, 85, 36);
+            font-style: normal;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-left: 22px;
+        }
+        .subsections-1>img{
+            margin-left: 10px;
+        }
+        .subsection-2>h2{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: normal;
+            margin-left: 22px;
+        }
+        .subsections-2>p{
+            color: rgb(154, 85, 36);
+            font-style: normal;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-left: 22px;
+        }
+        .subsections-2>img{
+            margin-left: 10px;
+        }
+        .subsection-3>h2{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: normal;
+            margin-left: 22px;
+        }
+        .subsections-3>p{
+            color: rgb(154, 85, 36);
+            font-style: normal;
+            font-family:Arial, Helvetica, sans-serif;
+            margin-left: 22px;
+        }
+        .subsections-3>img{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="healthy_food-logo.png" alt="logo" width="50px" srcset="">
+        <a class="home" href="#">Home</a>
+        <a class="about" href="#">About</a>
+        <a class="contact" href="#">Contact</a>
+        <button>Login</button>
+    </nav>
+    <div class="grid-container">
+        <div class="information">
+            <h1>Healthy Food</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium earum suscipit adipisci quibusdam assumenda unde reprehenderit, placeat neque praesentium deleniti sed ratione eius nobis id dolorum quasi maxime numquam nemo et inventore optio quis accusantium voluptatem. Labore blanditiis beatae minima ad ex ipsa, tenetur accusamus quibusdam reiciendis enim repellat fugiat</p>
+            <button>Read More</button>
+        </div>
+        <div class="picture">
+            <img src="healthy_foods.jpg" alt= "Healthy Food" srcset="">
+        </div>
+        </div>
+        <div class="Swiggy-featues">
+            <div class="subsections-1">
+                <img src="image-1.webp" width="200" height="300" alt="no-minimum-order" srcset="">
+                <h2>No Minimum Order</h2>
+                <p>Order in for yourself or for the group, with no restrictions on order view</p>
+            </div>
+            <div class="subsections-2">
+                <img src="image-2.webp" width="200" height="300" alt="live-order-tracking" srcset="">
+                <h2>Live Order Tracking</h2>
+                <p>Know where your order is at all times, from the restaurant to your doorstep</p>
+            </div>
+            <div class="subsections-3">
+                <img src="image-3.webp" width="200" height="300" alt="lightning-fast-delivery" srcset="">
+                <h2>Lightning-Fast Delivery</h2>
+                <p>Experience Swiggy's superfast delivery for food delivered fresh & on time</p>
+            </div>
+        </div>
+</body>
+</html>

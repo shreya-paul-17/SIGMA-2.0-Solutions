@@ -26,8 +26,43 @@
             height: 30px;
             margin-top: 30px;
         }
+        nav{
+            display: grid;
+            grid-template-columns:repeat(5,1fr);
+        }
+        nav>a{
+            text-decoration: none;
+            color: #000000;
+            padding-top: 30px;
+            display: grid;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .home{
+             margin-left:90px;
+        }
+        .about{
+            margin-left: 50px;
+            margin-right:35px;
+        }
+        .contact{
+            padding-right:140px;
+        }
+        nav>button{
+            width: 150px;
+            height: 40px;
+            background-color: #4add4a;
+            border-color:#4add4a;
+            color: #000000;
+            font-weight: bolder;
+            margin-left: 50%;
+            margin-top: 5%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
         .picture{
-            background-color: yellow;
+            background-color: #ffff00;
             height: 98%;
         }
         .picture>img{
@@ -38,8 +73,11 @@
 </head>
 <body>
     <nav>
-        <a href="#">Home</a>
-        
+        <img src="healthy_food-logo.png" alt="logo" width="50px" srcset="">
+        <a class="home" href="#">Home</a>
+        <a class="about" href="#">About</a>
+        <a class="contact" href="#">Contact</a>
+        <button>Login</button>
     </nav>
     <div class="grid-container">
         <div class="information">
