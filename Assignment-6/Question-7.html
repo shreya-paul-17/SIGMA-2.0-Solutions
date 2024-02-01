@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <style>
+        .scenery{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-gap:20px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            padding:20px;
+        }
+
+        .scenery-1{
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start:1;
+            grid-column-end:2;
+        }
+
+        .scenery-2{
+            grid-row-start:1;
+            grid-row-end:3;
+            grid-column-start:2;
+            grid-column-end:3;
+        }
+
+        .scenery-3{
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start:3;
+            grid-column-end:4;
+        }
+
+        .scenery-4{
+            grid-row-start:2;
+            grid-row-end:4;
+            grid-column-start:1;
+            grid-column-end:2;
+        }
+
+        .scenery-5{
+            grid-row-start:3;
+            grid-row-end:4;
+            grid-column-start:2;
+            grid-column-end:3;
+        }
+
+        .scenery-6{
+            grid-row-start:2;
+            grid-row-end:4;
+            grid-column-start:3;
+            grid-column-end:4;
+        }
+
+        img{
+            width:100%;
+            height:100%;
+            border-radius: 20px;
+        }
+    </style>
+    <div class="scenery">
+        <div class="scenery-1">
+            <img src="scenery-1.avif" alt="Photo gallery image" srcset="">
+        </div>
+        <div class="scenery-2">
+            <img src="scenery-2.avif" alt="Photo gallery image" srcset="">
+        </div>
+        <div class="scenery-3">
+            <img src="scenery-3.avif" alt="Photo gallery image" srcset="">
+        </div>
+        <div class="scenery-4">
+            <img src="scenery-4.avif" alt="Photo gallery image" srcset="">
+        </div>
+        <div class="scenery-5">
+            <img src="scenery-5.avif" alt="Photo gallery image" srcset="">
+        </div>
+        <div class="scenery-6">
+            <img src="scenery-6.jpg" alt="Photo gallery image" srcset="">
+        </div>
+    </div>
+</body>
+</html>
