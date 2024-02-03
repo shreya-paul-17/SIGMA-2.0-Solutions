@@ -7,19 +7,40 @@
 </head>
 <body>
     <style>
-        .color-container{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(2,1fr);
-            grid-gap:20px;
-            justify-content: space-around;
-            border-radius: 10px;
-            background-color: black;
+        body {
+             background-color: #0f0f0f;
+             color: #b9c2cb;
+            }
+
+        h1 {
+            font-size: 50px;
+            font-weight: normal;
         }
 
-        /* .colors{
+        .color-container{
+            max-width: 1400px;
+            width: 100%;
+            /* margin: auto; */
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+             "Lucida Sans", Arial, sans-serif;
+        }
 
-        } */
+        .colors{
+            display: grid;
+            gap: 50px;
+            margin: 0px 50px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .color{
+            padding: 200px 0px;
+            width: 100%;
+            border-radius: 20px;
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            color: #000;
+        }
 
         .color-1{
             background-color:#8d3daf ;
@@ -56,28 +77,28 @@
     <div class="color-container">
         <h1>Feeling Fancy</h1>
         <div class="colors">
-            <div class="color-1">
+            <div class="color color-1">
                <h3>#8D3DAF</h3>
             </div>
-            <div class="color-2">
+            <div class="color color-2">
                 <h3>#E07C24</h3>
             </div>
-            <div class="color-3">
+            <div class="color color-3">
                 <h3>#758283</h3>
             </div>
-            <div class="color-4">
+            <div class="color color-4">
                 <h3>#E03B8B</h3>
             </div>
-            <div class="color-5">
+            <div class="color color-5">
                 <h3>#FF6666</h3>
             </div>
-            <div class="color-6">
+            <div class="color color-6">
                 <h3>#03C6C7</h3>
             </div>
-            <div class="color-7">
+            <div class="color color-7">
                 <h3>#CAD5E2</h3>
             </div>
-            <div class="color-8">
+            <div class="color color-8">
                 <h3>#35BDD0</h3>
             </div>
         </div>
