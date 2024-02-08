@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <style>
+        .main-container{
+            max-width: 1500px;
+            width: 100%;
+            margin: auto;
+            border: 5px solid black;
+        }
+
+        .main-container>h1{
+            text-align: center;
+        }
+
+        .image-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .image-container>img{
+            width:450px;
+            height: 270px;
+            border: 3px solid black;
+            border-radius: 20px;
+            margin: 18px;
+        }
+        
+        @media screen and (max-width:600px) {
+                        
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="main-container">
+        <h1><u>Random Images</u></h1>
+        <div class="image-container">
+        <img src="img-1.webp" alt="Image" srcset="">
+        <img src="img-2.jpeg" alt="Image" srcset="">
+        <img src="img-3.jpg" alt="Image" srcset="">
+        <img src="img-4.jpg" alt="Image" srcset="">
+        <img src="img-5.jpg" alt="Image" srcset="">
+        <img src="img-6.jpg" alt="Image" srcset=""> 
+        </div>
+    </div>
+</body>
+</html>
