@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Note</title>
+    <style>
+        .notes-section{
+            width: 300px;
+            height: 300px;
+            background-image: linear-gradient(to right, #87e1eb, #360be3);
+            border: 2px solid black;
+            border-radius: 10px;
+            margin:100px auto;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .heading-section{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .heading-section>p{
+            color: #fff;
+        }
+
+        button{
+            background-image: linear-gradient(to right,#00e8e1, #27d489);
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .notes-section:hover{
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="notes-section">
+       <div class="heading-section">
+            <h2>#01</h2>
+            <p>Created On:01/01/2023</p>
+        </div>
+        <div class="main-section">
+            <h2>Important dates</h2>
+            <ul>
+                <li>January 26- Republic Day</li>
+                <li>August 15- Independence Day</li>
+                <li>October 2- Gandhi Jayanti</li>
+                <li>August 29- National Sports Day</li>
+            </ul>
+            <button type="button">Mark As Done</button>
+        </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        .surprise-section>h1{
+            text-align: center;
+        }
+
+        .image-container>img{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 50px auto;
+            border: 2px solid black;
+        }
+
+        .image-container>img:hover{
+            filter: grayscale(0.9);
+            transition-duration:2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="surprise-section">
+        <h1><u>Hover To Have A GrayScale Look.</u></h1>
+        <div class="image-container">
+        <img src="purple-flower.avif" alt="An image of flowers" srcset="">
+        </div>
+    </div>
+</body>
+</html>

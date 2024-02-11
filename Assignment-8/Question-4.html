@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        .image-container>img{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            margin: 150px auto;
+            border: 2px solid black;
+        }
+
+        .image-container>img:hover{
+            transition-duration:2s;
+            scale: 1.5;
+        }
+
+        @media screen and (max-width:600px){
+            .image-container>img:hover{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="purple-flower.avif" alt="An image of flowers" srcset="">
+    </div>
+</body>
+</html>
