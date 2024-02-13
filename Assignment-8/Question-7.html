@@ -22,7 +22,15 @@
         }
 
         @keyframes bounce{
-            
+        0%,
+        100% {
+          transform: translateY(-20%);
+          animation-timing-function: cubic-bezier(.54,0,1,.71);
+        }
+         50% {
+          transform: translateY(20%);
+          animation-timing-function: cubic-bezier(0,.31,.33,.89);
+        }
         }
     </style>
 </head>

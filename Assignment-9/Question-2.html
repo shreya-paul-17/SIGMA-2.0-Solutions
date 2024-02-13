@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body{
+            background-color: #000000;
+        }
+
+        .signup-section{
+            width: 400px;
+            height: 97vh;
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+        }
+
+        .signup-section>h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 1px;
+            margin-top: 35px;
+        }
+
+        .information-section{
+            padding: 30px;
+        }
+
+        .information-section>label{
+            text-align: left;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .information-section>input{
+            padding-bottom: 5px;
+            margin-bottom: 45px;
+            width:330px;
+        }
+
+        .information-section>select{
+            margin-bottom: 45px;
+            width: 340px;
+            height: 27px;
+        }
+
+        button{
+            width: 340px;
+            height: 30px;
+            background-color: #000000;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+
+        button:hover{
+            background-color: #37383a;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-section">
+        <h1>Signup</h1>
+        <div class="information-section">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="batch">Batch:</label><br>
+            <select name="batches" id="batches">
+                <option value="--batch-selection--">---Select a Batch---</option>
+                <option value="Sigma 1.0">Sigma 1.0</option>
+                <option value="Sigma 2.0">Sigma 2.0</option>
+                <option value="Binary 1.0">Binary 1.0</option>
+                <option value="Binary 2.0">Binary 2.0</option>
+                <option value="Impact 1.0">Impact 1.0</option>
+                <option value="Impact 2.0">Impact 2.0</option>
+            </select>
+            <br>
+            <label for="age">Age:</label><br>
+            <input type="number" name="age" id="age">
+            <br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password">
+            <br>
+            <button type="button">Signup</button>
+        </div>
+    </div>
+</body>
+</html>
